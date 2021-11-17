@@ -10,7 +10,7 @@ const getProductData = () => productData;
  * @returns {[{name: string}]} a name alapján rendezett tömb
  */
 const sortProducts = (products = [{ name: '' }]) => {
-    return products.sort((a,b) => a.name - b.name)
+    return products.sort((a,b) => a.name > b.name || -1)
 };
 
 /**
